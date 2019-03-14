@@ -20,7 +20,7 @@ class scylla::repo::yum {
   yumrepo { 'scylla-3rdparty':
     baseurl  =>  "https://copr-be.cloud.fedoraproject.org/results/scylladb/scylla-3rdparty/epel-7-x86_64/",
     descr    =>  'Copr repo for scylla-3rdparty owned by scylladb',
-    skip_if_unavailable => 'True',
+    skip_if_unavailable => 'true',
     gpgcheck =>  1,
     enabled  =>  1,
     gpgkey  =>  'https://copr-be.cloud.fedoraproject.org/results/scylladb/scylla-3rdparty/pubkey.gpg',
