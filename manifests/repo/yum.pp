@@ -11,7 +11,7 @@ class scylla::repo::yum {
   }
 
   yumrepo { 'scylla-generic':
-    baseurl  =>  "=https://repositories.scylladb.com/scylla/downloads/scylladb/e46d05ba-d2cc-4594-8387-5986145a4eea/scylla/rpm/centos/scylladb-${scylla::major_version}/\$releasever/noarch/",
+    baseurl  =>  "https://repositories.scylladb.com/scylla/downloads/scylladb/e46d05ba-d2cc-4594-8387-5986145a4eea/scylla/rpm/centos/scylladb-${scylla::major_version}/\$releasever/noarch/",
     descr    =>  'Scylla for centos $releasever',
     enabled  =>  1,
     gpgcheck =>  0,
